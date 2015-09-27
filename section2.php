@@ -19,47 +19,86 @@
 					</div><!-- /.col-lg-6 -->
 				</div>
             </div>
-			<div class="col-lg-12 well">
-				<?php
+			<div class="col-lg-12 well well-lg">
+			
+				<div class="text-center marginB50">
+					<img src="img/arrow4x4-icon.png" class="img-responsive display-img" />
+					<h1 class="text-center title-txt"><strong> Web Reservation <small>order</small></strong></h1>
+				</div>
 				
-				//connection to the database
-				$con = mysql_connect("localhost","root","")
-					or die("Unable to connect to MySQL");
-					echo "Connected to MySQL<br>";
+				<div>
+					<form class="form-horizontal">
+						<fieldset>
 
-				//select a database to work with
-				$selected = mysql_select_db("reservation",$con) 
-				  or die("Could not select reservation");
+						<!-- Form Name -->
+						<legend>Contact Info</legend>
 
-				//execute the SQL query and return records
-				$result = mysql_query("SELECT id, item_type, item, description, quantity, image FROM products");
+						<!-- Text input-->
+						<div class="form-group">
+						  <label class="col-md-4 control-label" for="firstname">First Name</label>  
+						  <div class="col-md-4">
+						  <input id="firstname" name="firstname" type="text" placeholder="First Name" class="form-control input-md" required="">
+							
+						  </div>
+						</div>
 
-				//fetch tha data from the database 
-				while ($row = mysql_fetch_array($result)) {
-					print('<div class="col-lg-2">
-						1
-					</div>
-					<div class="col-lg-2">
-						2
-					</div>
-					<div class="col-lg-2">
-						3
-					</div>
-					<div class="col-lg-2">
-						4
-					</div>
-					<div class="col-lg-2">
-						5
-					</div>
-					<div class="col-lg-2">
-						6
-					</div>');
-				   echo "ID:".$row{'id'}." Item Type:".$row{'item_type'}." Item:". //display the results
-				   $row{'item'}." Description:".$row{'description'}." Quantity:".$row{'quantity'}." Image:".$row{'image'}."<br>";
-				}
-				//close the connection
-				mysql_close($con);
-				?>
+						<!-- Text input-->
+						<div class="form-group">
+						  <label class="col-md-4 control-label" for="lastname">Last Name</label>  
+						  <div class="col-md-4">
+						  <input id="lastname" name="lastname" type="text" placeholder="Last Name" class="form-control input-md" required="">
+							
+						  </div>
+						</div>
+
+						<!-- Text input-->
+						<div class="form-group">
+						  <label class="col-md-4 control-label" for="contactno">Contact No.</label>  
+						  <div class="col-md-4">
+						  <input id="contactno" name="contactno" type="text" placeholder="Contact No." class="form-control input-md" required="">
+							
+						  </div>
+						</div>
+
+						<!-- Text input-->
+						<div class="form-group">
+						  <label class="col-md-4 control-label" for="email">Email Address</label>  
+						  <div class="col-md-4">
+						  <input id="email" name="email" type="text" placeholder="Email Address" class="form-control input-md" required="">
+							
+						  </div>
+						</div>
+
+						<!-- Text input-->
+						<div class="form-group">
+						  <label class="col-md-4 control-label" for="address">Address</label>  
+						  <div class="col-md-4">
+						  <input id="address" name="address" type="text" placeholder="Address" class="form-control input-md" required="">
+							
+						  </div>
+						</div>
+
+						<!-- Text input-->
+						<div class="form-group">
+						  <label class="col-md-4 control-label" for="plateno">Plate No.</label>  
+						  <div class="col-md-4">
+						  <input id="plateno" name="plateno" type="text" placeholder="Plate No." class="form-control input-md" required="">
+							
+						  </div>
+						</div>
+
+						<!-- Text input-->
+						<div class="form-group">
+						  <label class="col-md-4 control-label" for="model">Landrover Model</label>  
+						  <div class="col-md-4">
+						  <input id="model" name="model" type="text" placeholder="Landrover Model" class="form-control input-md" required="">
+							
+						  </div>
+						</div>
+
+						</fieldset>
+						</form>
+				</div>
 			</div>
 			<div class="col-lg-12">
 				<div class="panel panel-default">

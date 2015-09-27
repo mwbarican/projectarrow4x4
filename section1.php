@@ -34,7 +34,7 @@
 					echo "Connected to MySQL<br>";
 
 				//select a database to work with
-				$selected = mysql_select_db("reservation",$con) 
+				$selected = mysql_select_db("projectarrow4x4",$con) 
 				  or die("Could not select reservation");
 
 				//execute the SQL query and return records
