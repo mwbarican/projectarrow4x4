@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Bare - Start Bootstrap Template</title>
+    <title>Project Arrow4x4</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -51,22 +51,22 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav pull-right">
                     <li class="small">
-                        <a href="#">HOME</a>
+                        <a href="/new-web/#tf-home">HOME</a>
                     </li>
                     <li class="small">
-                        <a href="#">VEHICLES</a>
+                        <a href="/new-web/#tf-about">VEHICLES</a>
                     </li>
                     <li class="small">
-                        <a href="#">PRODUCTS</a>
+                        <a href="/new-web/#tf-team">PRODUCTS</a>
                     </li>
 					<li class="small">
-                        <a href="#">GALLERY</a>
+                        <a href="/new-web/#tf-works">GALLERY</a>
                     </li>
 					<li class="small">
-                        <a href="#">ABOUT</a>
+                        <a href="/new-web/#tf-teams">ABOUT</a>
                     </li>
 					<li class="small">
-                        <a href="#">CONTACT</a>
+                        <a href="/new-web/#tf-contact">CONTACT</a>
                     </li>
                 </ul>
             </div>
