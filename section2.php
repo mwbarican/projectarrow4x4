@@ -32,7 +32,7 @@
 						<fieldset>
 
 						<!-- Form Name -->
-						<legend>Contact Info</legend>
+						<legend class="text-center">Contact Info</legend>
 
 						<!-- Text input-->
 						<div class="form-group">

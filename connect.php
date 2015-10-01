@@ -10,7 +10,7 @@
 				  or die("Could not select reservation");
 
 				//execute the SQL query and return records
-				$result = mysql_query("SELECT id, item_type, item, description, quantity, image FROM products");
+				//$result = mysql_query("SELECT * FROM products");
 
 				//fetch tha data from the database 
 				/* while ($row = mysql_fetch_array($result)) {
