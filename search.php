@@ -1,5 +1,5 @@
 <?php
-    $key=$_GET['key'];
+    $key=$_GET['go'];
     $array = array();
     $con=mysql_connect("localhost","root","");
     $db=mysql_select_db("reservation",$con);
